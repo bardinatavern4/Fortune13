@@ -372,6 +372,13 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"apQ" = (
+/obj/machinery/door/airlock/wood{
+	name = "Ranger Quarters";
+	req_access_txt = "121"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "aqn" = (
 /obj/structure/timeddoor,
 /turf/closed/wall/r_wall/f13/vault,
@@ -486,6 +493,10 @@
 	},
 /turf/closed/indestructible/f13vaultrusted,
 /area/f13/bunker)
+"ayG" = (
+/obj/effect/turf_decal/stripes/red/line,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "ayH" = (
 /obj/machinery/airalarm{
 	dir = 1;
@@ -907,6 +918,10 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/brotherhood/offices1st)
+"aTh" = (
+/obj/effect/turf_decal/vg_decals/numbers/two,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "aTB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -1588,9 +1603,8 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "bnW" = (
-/obj/structure/simple_door/bunker,
-/turf/open/indestructible/ground/inside/subway,
-/area/f13/tunnel)
+/turf/closed/wall/f13/tunnel,
+/area/f13/caves)
 "boc" = (
 /obj/structure/bed,
 /obj/effect/landmark/start/f13/followersvolunteer,
@@ -2132,6 +2146,11 @@
 	},
 /turf/closed/indestructible/f13/matrix,
 /area/f13/tunnel)
+"bIy" = (
+/obj/structure/tires,
+/obj/structure/tires/two,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "bIS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -2208,7 +2227,11 @@
 /obj/item/kitchen/knife/combat,
 /obj/item/kitchen/knife/combat,
 /obj/item/kitchen/knife/combat,
-/obj/item/kitchen/knife/combat,
+/obj/item/kitchen/knife/combat{
+	desc = "A cheap knife made of tin with a blunted edge. Used by the NCR for training..";
+	force = 0;
+	name = "training knife"
+	},
 /obj/item/twohanded/sledgehammer/supersledge,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 5
@@ -2284,9 +2307,8 @@
 	},
 /area/f13/bunker)
 "bNv" = (
-/obj/structure/sign/warning/biohazard,
-/turf/closed/wall/f13/ruins,
-/area/f13/tunnel)
+/turf/open/floor/plating/tunnel,
+/area/f13/caves)
 "bNA" = (
 /obj/structure/rack,
 /obj/item/pda,
@@ -3459,6 +3481,12 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"cLh" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "cLp" = (
 /obj/structure/decoration/rag,
 /turf/closed/wall/r_wall/rust,
@@ -3557,6 +3585,35 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/tunnel)
+"cOx" = (
+/obj/structure/table/wood,
+/obj/item/kitchen/knife/combat{
+	desc = "A cheap knife made of tin with a blunted edge. Used by the NCR for training..";
+	force = 0;
+	name = "training knife"
+	},
+/obj/item/kitchen/knife/combat{
+	desc = "A cheap knife made of tin with a blunted edge. Used by the NCR for training..";
+	force = 0;
+	name = "training knife"
+	},
+/obj/item/kitchen/knife/combat{
+	desc = "A cheap knife made of tin with a blunted edge. Used by the NCR for training..";
+	force = 0;
+	name = "training knife"
+	},
+/obj/item/kitchen/knife/combat{
+	desc = "A cheap knife made of tin with a blunted edge. Used by the NCR for training..";
+	force = 0;
+	name = "training knife"
+	},
+/obj/item/kitchen/knife/combat{
+	desc = "A cheap knife made of tin with a blunted edge. Used by the NCR for training..";
+	force = 0;
+	name = "training knife"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "cOM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/fakelattice,
@@ -3959,6 +4016,11 @@
 /obj/structure/barricade/wooden/strong,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"dhl" = (
+/obj/structure/tires/half,
+/obj/structure/tires,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "dhy" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -4815,6 +4877,10 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"dQm" = (
+/obj/effect/turf_decal/vg_decals/numbers/three,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "dQA" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -5036,6 +5102,12 @@
 /obj/item/flashlight/lantern,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+"dXn" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "dXp" = (
 /obj/structure/table/wood/settler,
 /obj/item/flashlight/lamp,
@@ -6865,6 +6937,11 @@
 "frS" = (
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/f13/tcoms)
+"fsz" = (
+/obj/item/assembly/timer,
+/obj/structure/table/wood,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "fsN" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/rag{
@@ -8187,6 +8264,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/den)
+"gwC" = (
+/obj/structure/punching_bag,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "gwE" = (
 /turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
 	icon_state = "darkrustysolid"
@@ -9008,6 +9089,20 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/sewer)
+"hdY" = (
+/obj/structure/table/wood,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/obj/item/ammo_box/magazine/m22/empty,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "heg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/white/whitesolid{
@@ -10665,6 +10760,11 @@
 	},
 /turf/open/floor/wood/f13/oak,
 /area/f13/den)
+"inD" = (
+/obj/effect/landmark/poster_spawner/ncr,
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "inU" = (
 /obj/effect/decal/cleanable/blood/gibs/human/core,
 /turf/open/floor/plasteel/freezer,
@@ -11414,6 +11514,11 @@
 /obj/structure/decoration/vent,
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/medical)
+"iUK" = (
+/obj/structure/table/wood,
+/obj/structure/showcase/machinery/tv,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "iVi" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/f13{
@@ -12428,6 +12533,11 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"jJb" = (
+/obj/structure/tires,
+/obj/structure/tires/half,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "jJd" = (
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/gloves/color/white/bos,
@@ -12999,6 +13109,17 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/offices1st)
+"kfr" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
+"kfC" = (
+/obj/structure/target_stake,
+/obj/item/target,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "kfQ" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/clothes,
@@ -13079,6 +13200,14 @@
 /obj/machinery/microwave,
 /turf/open/floor/f13/wood,
 /area/f13/sewer)
+"kjw" = (
+/obj/structure/table/wood,
+/obj/item/paper/guides/jobs/security/range{
+	info = "<br> Welcome to the kill house, Trooper. This used to be a storage room but we got some extra training supplies in. You've been given the honor of trying our new CQB course. <br> <br> Directions: Prepare to start the course - you will need one .22 pistol, one reload, and one training knife. Make sure you have an instructor with you to time the course.   The instructor will count you down from 3, then say go. He will then start the timer at one minute of time. Your score is however many seconds were left on the timer before the end of the course - higher is better. At that point you are to begin. <br> <br> Stage 1: knife the bag to your left, proceed to the next room, shoot each target two times before continuing. <br> <br> Stage 2: Enter the room, knife the bag, and only after knifing the bag shoot each target twice at close range. <br> <br> Stage 3: Use a water stimpak, then shoot the target twice. After shooting the target twice, knife each bag and continue. <br> <br> Stage 4: Reload your pistol and shoot each target twice. Continue to the end of the course. Cross the red finish line to end the course. <br>";
+	name = "CQB Course Instructions"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "kjF" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib5-old"
@@ -14210,6 +14339,10 @@
 	},
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"lhu" = (
+/obj/effect/turf_decal/vg_decals/numbers/four,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "lhQ" = (
 /turf/closed/indestructible/f13/matrix,
 /area/f13/followers)
@@ -15034,6 +15167,15 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/followers)
+"lWD" = (
+/obj/structure/table/wood,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
+"lWW" = (
+/obj/item/target,
+/obj/structure/target_stake,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "lXw" = (
 /obj/machinery/workbench/advanced,
 /obj/effect/turf_decal/stripes/box,
@@ -16090,6 +16232,10 @@
 /obj/item/paper_bin,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"mMl" = (
+/obj/structure/barricade/wooden/strong,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "mMr" = (
 /turf/closed/indestructible/fakedoor{
 	desc = "An indestructible door. Hm.";
@@ -19933,6 +20079,13 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
+"pMI" = (
+/obj/structure/punching_bag,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "pMM" = (
 /obj/structure/table/optable/abductor,
 /obj/item/restraints/handcuffs,
@@ -20409,6 +20562,13 @@
 /obj/item/cultivator,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/den)
+"qgL" = (
+/obj/effect/turf_decal/stripes/red/line,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "qgO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain{
@@ -20511,6 +20671,16 @@
 	icon_state = "casino"
 	},
 /area/f13/brotherhood/offices2nd)
+"qmE" = (
+/obj/structure/table/wood,
+/obj/item/paper{
+	name = "High Scores"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "qmL" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/rd,
@@ -20837,6 +21007,10 @@
 /obj/item/instrument/trumpet,
 /turf/open/floor/plasteel/floorgrime,
 /area/f13/tunnel)
+"qzA" = (
+/obj/structure/tires/two,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "qzG" = (
 /obj/item/storage/firstaid/brute,
 /obj/item/storage/firstaid/brute,
@@ -21325,6 +21499,12 @@
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/den)
+"qSA" = (
+/obj/structure/tires/two,
+/obj/structure/tires,
+/obj/structure/tires/half,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "qSG" = (
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/indestructible/ground/inside/subway,
@@ -21745,6 +21925,12 @@
 	},
 /obj/structure/table,
 /turf/open/floor/carpet,
+/area/f13/ncr)
+"rim" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
 /area/f13/ncr)
 "riF" = (
 /obj/effect/spawner/lootdrop/f13/alcoholspawner,
@@ -22641,6 +22827,10 @@
 	icon_state = "purplefull"
 	},
 /area/f13/clinic)
+"rKB" = (
+/obj/structure/tires/five,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "rKE" = (
 /obj/item/candle{
 	pixel_x = -6;
@@ -22844,6 +23034,10 @@
 	icon_state = "housewood2-broken"
 	},
 /area/f13/sewer)
+"rQY" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "rRo" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -23475,6 +23669,12 @@
 	},
 /turf/open/floor/wood,
 /area/f13/brotherhood/offices1st)
+"suF" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "suZ" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/cups,
@@ -23562,6 +23762,10 @@
 /obj/item/reagent_containers/syringe/piercing,
 /turf/closed/wall/r_wall/rust,
 /area/f13/bunker)
+"sAH" = (
+/obj/structure/simple_door/interior,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "sBu" = (
 /obj/structure/wreck/trash/engine,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
@@ -23631,6 +23835,9 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/den)
+"sEv" = (
+/turf/closed/indestructible/rock,
+/area/f13/ncr)
 "sEQ" = (
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/floor/plasteel/f13{
@@ -24324,6 +24531,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/tunnel)
+"toT" = (
+/obj/structure/table/wood,
+/obj/item/gun/ballistic/automatic/pistol/pistol22,
+/obj/item/gun/ballistic/automatic/pistol/pistol22,
+/obj/item/gun/ballistic/automatic/pistol/pistol22,
+/obj/item/gun/ballistic/automatic/pistol/pistol22,
+/obj/item/gun/ballistic/automatic/pistol/pistol22,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "tpf" = (
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gib2-old"
@@ -26124,6 +26340,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
+"vaw" = (
+/obj/structure/table/wood,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/obj/item/ammo_box/m22/plinking,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "vaH" = (
 /obj/structure/rack,
 /turf/open/floor/f13{
@@ -26408,6 +26636,13 @@
 	icon_state = "fwall_opening"
 	},
 /area/f13/tunnel)
+"vmo" = (
+/obj/machinery/door/airlock/wood{
+	name = "Kill House";
+	req_access_txt = "121"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "vnJ" = (
 /obj/item/instrument/guitar,
 /obj/structure/rack,
@@ -26882,6 +27117,75 @@
 	},
 /turf/closed/mineral/random/low_chance,
 /area/f13/caves)
+"vLS" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/obj/item/reagent_containers/hypospray/medipen/stimpak/custom{
+	desc = "A handheld delivery system for medicine, this particular one is used for training.";
+	list_reagents = list(/datum/reagent/water = 5);
+	name = "training stimpak"
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "vLT" = (
 /obj/structure/junk/small/bed,
 /obj/effect/decal/fakelattice,
@@ -27990,6 +28294,10 @@
 	},
 /turf/closed/wall/f13/wood,
 /area/f13/tunnel)
+"wXK" = (
+/obj/effect/turf_decal/vg_decals/numbers/one,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "wYe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/chair,
@@ -28047,6 +28355,10 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"xaU" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "xaY" = (
 /obj/structure/simple_door/room,
 /turf/open/floor/f13/wood{
@@ -28095,10 +28407,19 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/tunnel)
+"xeo" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "xeC" = (
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"xeG" = (
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid,
+/area/f13/ncr)
 "xfa" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/handy/assaultron/nsb,
@@ -30255,10 +30576,10 @@ kxd
 kxd
 kxd
 kxd
-aoj
-aoj
-aoj
-aoj
+bnW
+bnW
+bnW
+bnW
 kxd
 kxd
 kxd
@@ -30511,12 +30832,12 @@ hDw
 hDw
 hDw
 hDw
-kxd
-aoj
-aoj
-uoO
-aoj
-kxd
+cFL
+bNv
+bNv
+bNv
+bNv
+hDw
 hDw
 hDw
 hDw
@@ -30768,12 +31089,12 @@ hDw
 hDw
 hDw
 hDw
-kxd
-uoO
-aoj
-aoj
-aoj
-kxd
+cFL
+bNv
+bNv
+bNv
+bNv
+hDw
 hDw
 mrp
 hDw
@@ -31026,9 +31347,9 @@ kxd
 hDw
 hDw
 kxd
-uoO
-uoO
-aoj
+bnW
+bnW
+bnW
 kxd
 kxd
 cFL
@@ -31298,13 +31619,13 @@ hDw
 hDw
 hDw
 kxd
-aoj
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
 uoO
 uoO
 kxd
@@ -31555,13 +31876,13 @@ hDw
 hDw
 hDw
 kxd
-aoj
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+bSs
+bSs
+bSs
+bSs
+sEv
 uoO
 uoO
 kxd
@@ -31812,13 +32133,13 @@ hDw
 hDw
 mrp
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+pMI
+inD
+xeG
+bSs
+sEv
 uoO
 uoO
 kxd
@@ -32069,14 +32390,14 @@ hDw
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+xeG
+wXK
+xeG
+bSs
+sEv
+eLE
 kxd
 kxd
 hDw
@@ -32326,14 +32647,14 @@ kxd
 kxd
 kxd
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+xeG
+inD
+xeG
+bSs
+bSs
+eLE
 kxd
 hDw
 hDw
@@ -32568,29 +32889,29 @@ kxd
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+sEv
+bSs
+suF
+rKB
+xeG
+fsz
+bSs
+eLE
 kxd
 hDw
 hDw
@@ -32825,30 +33146,30 @@ kxd
 hDw
 rAb
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
+sEv
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+bSs
+xeG
+mMl
+xeG
+xeG
+bSs
+tMD
+kxd
 eoy
 cFL
 eoy
@@ -33082,30 +33403,30 @@ kxd
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-eoy
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
+sEv
+bSs
+suF
+gwC
+xeG
+rim
+gwC
+xeG
+mMl
+kfC
+rim
+lWW
+mMl
+xeG
+rim
+xeG
+sAH
+xeG
+mMl
+xeG
+xeG
+bSs
+tMD
+kxd
 nBk
 nBk
 nBk
@@ -33339,30 +33660,30 @@ kxd
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-eoy
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
+sEv
+bSs
+lWW
+xeG
+xeG
+xeG
+xeG
+xeG
+dQm
+xeG
+gwC
+xeG
+mMl
+xeG
+lWD
+iUK
+mMl
+qSA
+mMl
+xeG
+xaU
+bSs
+tMD
+kxd
 nBk
 nBk
 nBk
@@ -33596,30 +33917,30 @@ kxd
 hDw
 hDw
 eoy
-efl
-bNv
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-nBk
-nBk
-nBk
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
+sEv
+bSs
+xeG
+xeG
+gwC
+xeG
+xeG
+xeG
+mMl
+xeG
+xeG
+xeG
+mMl
+xeG
+xeG
+xeG
+rKB
+dXn
+xeo
+xeG
+xeG
+bSs
+tMD
+kxd
 eoy
 eoy
 eoy
@@ -33852,30 +34173,30 @@ uoO
 adO
 hDw
 mrp
-bnW
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
 eoy
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+lhu
+mMl
+mMl
+mMl
+mMl
+mMl
+mMl
+xeG
+xeG
+xeG
+mMl
+kfC
+xeG
+kfC
+mMl
+kfr
+rKB
+toT
+xeG
+bSs
+eLE
 uoO
 uoO
 uoO
@@ -34109,30 +34430,30 @@ uoO
 adO
 hDw
 hDw
-bnW
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
-nBk
 eoy
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+mMl
+xeG
+xeG
+xeG
+mMl
+rKB
+aTh
+rKB
+mMl
+kfr
+dhl
+vaw
+xeG
+bSs
+eLE
 uoO
 uoO
 uoO
@@ -34367,29 +34688,29 @@ kxd
 hDw
 hDw
 eoy
-efl
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-eoy
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+rQY
+rQY
+rQY
+rQY
+rQY
+xeG
+mMl
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+mMl
+kfr
+jJb
+hdY
+xeG
+bSs
+eLE
 uoO
 uoO
 uoO
@@ -34624,29 +34945,29 @@ kxd
 hDw
 hDw
 eoy
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+mMl
+mMl
+mMl
+mMl
+mMl
+mMl
+mMl
+mMl
+mMl
+kfr
+bIy
+vLS
+xaU
+bSs
+eLE
 uoO
 uoO
 uoO
@@ -34881,29 +35202,29 @@ kxd
 rAb
 hDw
 eoy
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+ayG
+xeo
+xeo
+xeo
+xeo
+xeo
+xeo
+xeG
+rKB
+cOx
+xeG
+bSs
 eLE
-eLE
-eLE
-eLE
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
 uoO
 uoO
 uoO
@@ -35138,29 +35459,29 @@ rAb
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+sEv
+bSs
+suF
+xeG
+kfC
+xeG
+xeG
+xeG
+mMl
+xeG
+ayG
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+xeG
+qzA
+kjw
+xeG
+bSs
+eLE
 uoO
 uoO
 uoO
@@ -35395,28 +35716,28 @@ rAb
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-uoO
-uoO
-uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+sEv
+bSs
+kfC
+xeG
+xeG
+cLh
+kfC
+xeG
+mMl
+xeG
+qgL
+xeG
+xeG
+xeG
+qmE
+xeG
+xeG
+cLh
+xeG
+xeG
+xeG
+bSs
 eLE
 uoO
 uoO
@@ -35652,11 +35973,7 @@ kxd
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-eLE
+sEv
 bSs
 bSs
 bSs
@@ -35673,6 +35990,10 @@ bSs
 bSs
 bSs
 bSs
+bSs
+bSs
+vmo
+apQ
 bSs
 bSs
 bSs
@@ -35909,11 +36230,11 @@ kxd
 hDw
 hDw
 kxd
-uoO
-uoO
-uoO
-uoO
-eLE
+sEv
+sEv
+sEv
+sEv
+sEv
 bSs
 caQ
 dxi
