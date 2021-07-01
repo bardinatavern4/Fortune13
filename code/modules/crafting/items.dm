@@ -986,6 +986,90 @@
 				/obj/item/stock_parts/cell/ammo/ecp,
 				/obj/item/megaphone)
 
+//Legion Armor Kits start
+
+
+/obj/item/armorkit
+	name = "Legionarre Armor Supplies"
+	desc = "A kit filled with supplies for delinking or bending chains, welding, and otherwise patching and improving armor. Used by legionarres to tailor their armor to their needs. This one adds additional plates and mail to armor."
+	icon = 'icons/fallout/objects/tools.dmi'
+	icon_state = "repairkitarmor"
+	item_state = "cell"
+	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'	
+	
+/obj/item/armorkit/light
+	name = "Legionarre Light Armor Supplies"
+	desc = "A kit filled with supplies for delinking or bending chains, welding, and otherwise patching and improving armor. Used by legionarres to tailor their armor to their needs. This one is for removing pieces of armor, replacing them with leather or linen to increase mobility."
+	icon = 'icons/obj/assemblies.dmi'
+
+
+/obj/item/armorkit/light/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(istype(W, /obj/item/clothing/suit/armor/f13/legion))
+		if(W.cantarmorkit == TRUE)
+			to_chat(usr, "You can't use the armor kit on this...")
+			return
+		else
+			armorimprovelight(W, user)	
+			return
+	else 
+		to_chat(usr, "This kit seems suited to improving sets of chainmail and plate. You're not sure how you'd use it on [W.name]...")
+		return
+
+/obj/item/armorkit/light/proc/armorimprovelight(obj/item/W, mob/user)
+	var/obj/item/clothing/suit/armor/A = W
+	var/prefix = "Lightened "
+	if(A.tinkered > 0) //set this way to prevent stacking armor kits + tinker
+		to_chat(usr, "This item can't be upgraded more!")
+		return
+	else
+		A.armor.linemelee -= 25
+		A.armor.linebullet -= 25
+		A.armor.linelaser -= 25
+		A.slowdown -= 0.15
+		A.name = prefix + A.name
+		A.tinkered += 1
+		A.desc += " Armor: Melee: [A.armor.linemelee], Bullet: [A.armor.linebullet], Laser: [A.armor.linelaser]"
+		to_chat(usr, "You use the kit on the armor, making it lighter but less protective.")
+		qdel(src)
+
+/obj/item/armorkit/heavy
+	name = "Legionarre Heavy Armor Supplies"
+	desc = "A kit filled with supplies for delinking or bending chains, welding, and otherwise patching and improving armor. Used by legionarres to tailor their armor to their needs. This one is for added additional mail and plates."
+	icon = 'icons/obj/assemblies.dmi'
+
+/obj/item/armorkit/heavy/attackby(obj/item/W, mob/user, params)
+	. = ..()
+	if(istype(W, /obj/item/clothing/suit/armor/f13/legion))
+		if(W.cantarmorkit == TRUE)
+			to_chat(usr, "You can't use the armor kit on this...")
+			return
+		else	
+			armorimproveheavy(W, user)	
+			return	
+	else 
+		to_chat(usr, "This kit seems suited to improving sets of chainmail and plate. You're not sure how you'd use it on [W.name]...")
+		return
+
+/obj/item/armorkit/heavy/proc/armorimproveheavy(obj/item/W, mob/user)
+	var/obj/item/clothing/suit/armor/A = W
+	var/prefix = "Bulky "
+	if(A.tinkered > 0) //set this way to prevent stacking armor kits + tinker
+		to_chat(usr, "This item can't be upgraded more!")
+		return
+	else
+		A.armor.linemelee += 25
+		A.armor.linebullet += 25
+		A.armor.linelaser += 25
+		A.slowdown += 0.12
+		A.name = prefix + A.name
+		A.tinkered += 1
+		A.desc += " Armor: Melee: [A.armor.linemelee], Bullet: [A.armor.linebullet], Laser: [A.armor.linelaser]"
+		to_chat(usr, "You use the kit on the armor, making it heavier but more protective..")
+		qdel(src)
+//Legion armor kits end
+
 /obj/item/experimental
 	name = "Experimental component"
 	desc = "What could this do..."
@@ -1019,6 +1103,7 @@
 /obj/item
 	var/tinkered = 0
 	var/untinkerable = FALSE
+	var/cantarmorkit = FALSE
 	
 /obj/item/experimental/proc/reroll(obj/item/W, mob/user)
 	var/obj/item/item = W.type

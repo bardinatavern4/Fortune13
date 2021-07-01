@@ -175,7 +175,11 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	allowed = list(/obj/item/gun, /obj/item/claymore, /obj/item/throwing_star/spear, /obj/item/restraints/legcuffs/bola, /obj/item/twohanded, /obj/item/melee/powered, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 16, "bio" = 30, "rad" = 20, "fire" = 40, "acid" = 0)
-
+	cantarmorkit = FALSE
+	/* var/cantarmorkit = FALSE 
+	set to false by default in the items.dm where the code for it's located. 
+	determines whether or not the legion armor kits can be used on this set of armor. the heavy kits make it slower but stronger, the light kits make it faster but weaker.
+	*/
 /obj/item/clothing/suit/armor/f13/legion/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
@@ -220,18 +224,11 @@
 
 /obj/item/clothing/suit/armor/f13/legion/vet
 	name = "legion veteran armor"
-	desc = "(V) Armor worn by veterans, salvaged bits of enemy armor and scrap metal often reinforcing the armor. Very heavy, slows you down a bit."
-	slowdown = 0.2
+	desc = "(V) Armor worn by veterans, salvaged bits of enemy armor and scrap metal often reinforcing the armor. Very heavy, though parts of it can be removed (or added) to suit a legionarre's needs."
 	icon_state = "legion-veteran"
 	item_state = "legion-veteran"
-
+	slowdown = 0.1
 	armor = list("tier" = 5, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 40, "acid" = 0)
-
-/obj/item/clothing/suit/armor/f13/legion/vet/heavy
-	name = "legion shieldbearer armor"
-	desc = "(VI) The armor appears to be based off of a suit of Legion veteran armor, with the addition of bracers, a chainmail skirt, and large pauldrons.  A tabard emblazoned with the bull is loosely draped over the torso."
-	slowdown = 0.8
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 50, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/legion/heavy
 	name = "legion veteran decan armor"
@@ -247,7 +244,7 @@
 	item_state = "legion-explorer"
 	armor = list("tier" = 4, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 40, "acid" = 0)
 	slowdown = -0.10
-
+	cantarmorkit = TRUE
 
 /obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	name = "legion vexillarius armor"
@@ -255,6 +252,7 @@
 	desc = "(V) Worn by Vexillarius, this armor has been reinforced with circular metal plates on the chest and a back mounted pole for the flag of the Bull, making the wearer easy to see at a distance."
 	icon_state = "legion-vex"
 	item_state = "legion-vex"
+	cantarmorkit = TRUE
 
 /obj/item/clothing/suit/armor/f13/legion/venator
 	name = "legion venator armor"
@@ -262,7 +260,7 @@
 	icon_state = "legion-venator"
 	item_state = "legion-venator"
 	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 40, "acid" = 0)
-	
+	cantarmorkit = TRUE
 
 /obj/item/clothing/suit/armor/f13/legion/centurion
 	name = "legion centurion armor"
@@ -271,7 +269,7 @@
 	item_state = "legion-centurion"
 	slowdown = 0
 	armor = list("tier" = 6, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 60, "acid" = 0)
-
+	cantarmorkit = TRUE
 
 /obj/item/clothing/suit/armor/f13/legion/palacent
 	name = "paladin-slayer centurion armor"
@@ -280,7 +278,8 @@
 	item_state = "legion-palacent"
 	slowdown = 0.4 //your armor is very strong but you do get slowdown. This is still notably less then normal salvaged PA though.
 	armor = list("tier" = 7, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 70, "acid" = 0)
-
+	cantarmorkit = TRUE
+	
 /obj/item/clothing/suit/armor/f13/legion/rangercent
 	name = "ranger-hunter centurion armor"
 	desc = "(V) Centurions who have led many patrols and ambushes against NCR Rangers have a distinct look from the many looted pieces of Ranger armor, and are often experienced in skirmishing."
@@ -288,7 +287,7 @@
 	item_state = "legion-rangercent"
 	slowdown = -0.1
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 39, "bio" = 60, "rad" = 20, "fire" = 70, "acid" = 0)
-
+	cantarmorkit = TRUE
 /obj/item/clothing/suit/armor/f13/legion/legate
 	name = "legion legate armor"
 	desc = "(VIII) Made by the most skilled blacksmiths in Arizona, the bronzed steel of this rare armor offers good protection, and the scars on its metal proves it has seen use on the field."
@@ -296,6 +295,7 @@
 	item_state = "legion-legate"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	armor = list("tier" = 8, "energy" = 40, "bomb" = 45, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)
+	cantarmorkit = TRUE
 
 /obj/item/clothing/suit/armor/f13/combat/legion
 	name = "Legion combat armor"

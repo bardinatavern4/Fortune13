@@ -497,9 +497,10 @@ kept here incase it gets reworked later.*/
 /datum/outfit/loadout/vetshielder //Shield, heavy armor, and a huge quiver full of throwing spears. The true chad role
 	name =			"Shield Bearer"
 	suit_store =	/obj/item/gun/ballistic/automatic/pistol/m1911
-	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/heavy
-	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/heavy
+	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
+	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	backpack_contents = list(
+					/obj/item/armorkit/heavy=1,
 					/obj/item/storage/backpack/spearquiver/enormous=1,
 					/obj/item/ammo_box/magazine/m45/ap=2,
 					/obj/item/claymore/machete/gladius=1,
@@ -511,6 +512,7 @@ kept here incase it gets reworked later.*/
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
 	suit_store =	/obj/item/gun/ballistic/rifle/repeater/trail
 	backpack_contents = list(
+					/obj/item/armorkit/light=1,
 					/obj/item/ammo_box/tube/m44=2,
 					/obj/item/claymore/machete/gladius=1,
 					/obj/item/ammo_box/a357=1,

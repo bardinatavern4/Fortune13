@@ -46,6 +46,31 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+/datum/crafting_recipe/armorkit_light
+	name = "Legionarre Light Armor Supplies"
+	result = /obj/item/armorkit/light
+	reqs = list(/obj/item/stack/sheet/leather = 3,
+				/obj/item/weaponcrafting/string = 1,
+				/obj/item/stack/crafting/goodparts = 1,
+				/obj/item/stack/crafting/metalparts = 2)
+	tools = list(TOOL_WORKBENCH)
+	time = 10
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+/datum/crafting_recipe/armorkit_heavy
+	name = "Legionarre Heavy Armor Supplies"
+	result = /obj/item/armorkit/heavy
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/weaponcrafting/string = 3,
+				/obj/item/stack/crafting/goodparts = 2,
+				/obj/item/stack/crafting/metalparts = 5)
+	tools = list(TOOL_WORKBENCH)
+	time = 10
+	category = CAT_CLOTHING
+	subcategory = CAT_ARMOR
+
+
 /datum/crafting_recipe/armor_plate_plastit
 	name = "Armor Plate"
 	result = /obj/item/stack/crafting/armor_plate

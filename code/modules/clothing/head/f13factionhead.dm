@@ -403,10 +403,6 @@
 	item_state = "legion-combat2"
 
 
-/obj/item/clothing/head/helmet/f13/legion/vet/heavy
-	name = "legion shieldbearer helmet"
-	desc = "(VI) A metal legion veteran helmet with an inverted color scheme for shieldbearers"
-	armor = list("tier" = 6, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /*
 /obj/item/clothing/head/helmet/f13/legion/recruit/scout
