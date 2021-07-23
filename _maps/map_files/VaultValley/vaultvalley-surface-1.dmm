@@ -2234,9 +2234,6 @@
 /turf/open/floor/f13/wood,
 /area/space)
 "jX" = (
-/obj/structure/sign/poster/prewar/poster89{
-	pixel_x = 32
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -5118,10 +5115,6 @@
 /area/space)
 "ww" = (
 /obj/structure/table,
-/obj/item/melee/curator_whip{
-	desc = "It stings like hell to be hit by.";
-	name = "Slave whip"
-	},
 /turf/open/floor/f13,
 /area/space)
 "wx" = (

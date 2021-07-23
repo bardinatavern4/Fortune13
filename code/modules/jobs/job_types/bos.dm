@@ -80,9 +80,10 @@ Elder
 	suit_store =	/obj/item/gun/energy/laser/laer
 	neck = /obj/item/clothing/neck/cloak/bos/right
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/mfc=2, \
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/ballistic/automatic/pistol/n99=1)
+		/obj/item/stock_parts/cell/ammo/mfc = 2,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		)
 
 /*
 Head Paladin
@@ -146,9 +147,10 @@ Head Paladin
 	id = 			/obj/item/card/id/dogtag
 	neck = 			/obj/item/clothing/neck/cloak/bos/paladin
 	backpack_contents = list(
-		/obj/item/kitchen/knife/combat=1,
-		/obj/item/gun/ballistic/automatic/pistol/n99=1,
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
 		)
 
 /datum/outfit/loadout/sentstand
@@ -233,8 +235,8 @@ Head Scribe
 	belt = 			/obj/item/storage/belt/utility/full/engi
 	id = 			/obj/item/card/id/dogtag
 	backpack_contents = list(
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=3, \
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 3,
 		)
 
 /datum/outfit/loadout/hsstand
@@ -287,7 +289,6 @@ Head Knight
 		return
 	ADD_TRAIT(H, TRAIT_CHEMWHIZ, src)
 	ADD_TRAIT(H, TRAIT_PA_WEAR, src)
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/bos/f13knightcap
 	name = "Head Knight"
@@ -297,15 +298,16 @@ Head Knight
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	suit = 			/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-	glasses =       /obj/item/clothing/glasses/night
+	glasses =		/obj/item/clothing/glasses/night
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
-	accessory = 	/obj/item/clothing/accessory/bos/knightcaptain
-	belt = 			/obj/item/storage/belt/security/full
+	accessory =		/obj/item/clothing/accessory/bos/knightcaptain
+	belt =			/obj/item/storage/belt/security/full
 	mask =			/obj/item/clothing/mask/gas/sechailer/swat
 	head =			/obj/item/clothing/head/helmet/f13/combat/brotherhood/captain
-	id = 			/obj/item/card/id/dogtag
+	id =			/obj/item/card/id/dogtag
 	backpack_contents = list(
-		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
 		)
 
 /datum/outfit/loadout/capstand
@@ -383,9 +385,11 @@ Star Paladin
 	neck = /obj/item/clothing/neck/cloak/bos/paladin
 
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/plasma/pistol=1, \
-		/obj/item/stock_parts/cell/ammo/ec=2,
-		)
+		/obj/item/gun/energy/laser/plasma/pistol = 1,
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super = 1,
+	)
 
 /datum/outfit/loadout/spaladina
 	name = "Long-Range Support Senior Paladin"
@@ -458,7 +462,8 @@ Paladin
 	belt = 			/obj/item/storage/belt/military
 	neck = /obj/item/clothing/neck/cloak/bos/paladin
 	backpack_contents = list(
-		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/melee/onehanded/knife/survival=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1
 		)
 
 /datum/outfit/loadout/paladina
@@ -541,11 +546,12 @@ Senior Scribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/energy/laser/pistol=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2, \
-		/obj/item/reagent_containers/hypospray/CMO=1)
+		/obj/item/stock_parts/cell/ammo/ec = 2,
+		/obj/item/melee/onehanded/knife/survival = 1,
+		/obj/item/gun/energy/laser/pistol = 1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak = 2,
+		/obj/item/reagent_containers/hypospray/CMO = 1,
+		)
 
 /*
 Scribe
@@ -593,10 +599,11 @@ Scribe
 	id = 			/obj/item/card/id/dogtag
 	glasses =		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
-		/obj/item/stock_parts/cell/ammo/ec=2, \
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/gun/energy/laser/pistol=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=2)
+		/obj/item/stock_parts/cell/ammo/ec=2,
+		/obj/item/melee/onehanded/knife/survival=1,
+		/obj/item/gun/energy/laser/pistol=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=2
+		)
 
 /datum/outfit/job/bos/f13scribe/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -660,8 +667,10 @@ datum/job/bos/f13seniorknight
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	backpack_contents = list(
-	)
-
+		/obj/item/melee/onehanded/knife/survival=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1
+		)
+	
 /datum/outfit/loadout/sknighta
 	name = "Footknight"
 	backpack_contents = list(
@@ -722,7 +731,9 @@ Knight
 	gunsmith_three = TRUE
 	gunsmith_four = TRUE
 	backpack_contents = list(
-	)
+		/obj/item/melee/onehanded/knife/survival=1,
+		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=1
+		)
 
 /datum/outfit/loadout/knighta
 	name = "Junior Footknight"
@@ -792,6 +803,9 @@ Initiate
 	uniform =		/obj/item/clothing/under/syndicate/brotherhood
 	shoes = 		/obj/item/clothing/shoes/combat/swat
 	gloves = 		/obj/item/clothing/gloves/combat
+	backpack_contents = list(
+		/obj/item/melee/onehanded/knife/survival = 1,
+		)
 
 /datum/outfit/job/bos/f13initiate/post_equip(mob/living/carbon/human/H, visualsOnly)
 	..()
@@ -875,7 +889,7 @@ Off-Duty
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=1,
 		/obj/item/stack/medical/gauze=1,
 		/obj/item/encryptionkey/headset_bos=1,
-		/obj/item/kitchen/knife/combat=1
+		/obj/item/melee/onehanded/knife/survival=1
 		)
 
 /datum/outfit/loadout/offa

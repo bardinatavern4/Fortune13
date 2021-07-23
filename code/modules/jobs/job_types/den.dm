@@ -15,13 +15,13 @@ here's a tip, go search DEFINES/access.dm
 Mayor
 */
 
-/datum/job/den
-	exp_type = EXP_TYPE_DEN
+/datum/job/oasis
+	exp_type = EXP_TYPE_OASIS
 
-/datum/job/den/f13mayor
+/datum/job/oasis/f13mayor
 	title = "Mayor"
 	flag = F13MAYOR
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 1
 	spawn_positions = 1
@@ -44,7 +44,7 @@ Mayor
 
 /datum/outfit/job/den/f13mayor
 	name = "Mayor"
-	jobtype = /datum/job/den/f13mayor
+	jobtype = /datum/job/oasis/f13mayor
 
 	ears = 			/obj/item/radio/headset/headset_town
 	id =            /obj/item/card/id/silver/mayor
@@ -65,10 +65,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13sheriff
+/datum/job/oasis/f13sheriff
 	title = "Sheriff"
 	flag = F13SHERIFF
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	head_announce = list("Security")
 	faction = "Town"
 	total_positions = 1
@@ -85,7 +85,7 @@ Mayor
 
 /datum/outfit/job/den/f13sheriff
 	name = "Sheriff"
-	jobtype = /datum/job/den/f13sheriff
+	jobtype = /datum/job/oasis/f13sheriff
 
 	id = /obj/item/card/id/dogtag/sheriff
 	belt = null
@@ -102,14 +102,13 @@ Mayor
 	l_hand = 		/obj/item/gun/ballistic/rifle/repeater/brush
 	l_pocket =		/obj/item/storage/bag/money/small/den
 	backpack_contents = list(
-		/obj/item/storage/box/deputy_badges=1, \
-		/obj/item/ammo_box/tube/c4570=3, \
-		/obj/item/ammo_box/m44=2, \
-		/obj/item/restraints/handcuffs=1, \
-		/obj/item/melee/classic_baton=1, \
-		/obj/item/kitchen/knife/combat)
-	r_pocket = /obj/item/flashlight/flare
-	belt = /obj/item/gun/ballistic/revolver/m29/peacekeeper
+		/obj/item/storage/box/deputy_badges = 1,
+		/obj/item/ammo_box/tube/c4570 = 3,
+		/obj/item/ammo_box/m44 = 2,
+		/obj/item/restraints/handcuffs = 1,
+		/obj/item/melee/classic_baton = 1,
+		/obj/item/melee/onehanded/knife/hunting = 1,
+		)
 
 /datum/outfit/job/den/f13sheriff/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -121,10 +120,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13deputy
+/datum/job/oasis/f13deputy
 	title = "Deputy"
 	flag = F13DEPUTY
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
@@ -132,7 +131,7 @@ Mayor
 	description = "You've passed the training and tests to join the OPD, and your loyalty to the Chief is absolute - this is your new home, your family. This oasis of civilization will not fall as long as you breathe. Protect its citizens and property, for that is your new purpose."
 	selection_color = "#dcba97"
 	exp_requirements = 12
-	exp_type = EXP_TYPE_DEN
+	exp_type = EXP_TYPE_OASIS
 	exp_requirements = 600
 
 	outfit = /datum/outfit/job/den/f13deputy
@@ -141,7 +140,7 @@ Mayor
 
 /datum/outfit/job/den/f13deputy
 	name = "Deputy"
-	jobtype = /datum/job/den/f13deputy
+	jobtype = /datum/job/oasis/f13deputy
 
 	ears = 			/obj/item/radio/headset/headset_town
 	id =            /obj/item/card/id/dogtag/deputy
@@ -156,10 +155,11 @@ Mayor
 	shoes = 		/obj/item/clothing/shoes/f13/explorer
 	uniform = /obj/item/clothing/under/f13/cowboyb
 	backpack_contents = list(
-		/obj/item/ammo_box/a357=2, \
-		/obj/item/ammo_box/tube/m44=2, \
-		/obj/item/restraints/handcuffs=1, \
-		/obj/item/kitchen/knife/combat)
+		/obj/item/ammo_box/a357 = 2,
+		/obj/item/ammo_box/tube/m44 = 2,
+		/obj/item/restraints/handcuffs = 1,
+		/obj/item/melee/onehanded/knife/hunting = 1,
+		)
 
 /datum/outfit/job/den/f13deputy/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -169,10 +169,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13farmer
+/datum/job/oasis/f13farmer
 	title = "Farmer"
 	flag = F13FARMER
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
@@ -187,7 +187,7 @@ Mayor
 
 /datum/outfit/job/den/f13farmer
 	name = "Farmer"
-	jobtype = /datum/job/den/f13farmer
+	jobtype = /datum/job/oasis/f13farmer
 
 	id = /obj/item/card/id/dogtag/town
 	ears = 			/obj/item/radio/headset/headset_town
@@ -215,10 +215,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13prospector
+/datum/job/oasis/f13prospector
 	title = "Prospector"
 	flag = F13PROSPECTOR
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 4
 	spawn_positions = 4
@@ -233,7 +233,7 @@ Mayor
 
 /datum/outfit/job/den/f13prospector
 	name = "Prospector"
-	jobtype = /datum/job/den/f13prospector
+	jobtype = /datum/job/oasis/f13prospector
 
 	id = /obj/item/card/id/dogtag/town
 	ears = /obj/item/radio/headset/headset_town
@@ -246,11 +246,12 @@ Mayor
 	belt = /obj/item/storage/bag/ore
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack_contents = list(
-		/obj/item/mining_scanner=1, \
-		/obj/item/shovel=1, \
-		/obj/item/kitchen/knife/combat, \
-		/obj/item/gun/ballistic/automatic/pistol/n99, \
-		/obj/item/ammo_box/magazine/m10mm_adv/simple=2)
+		/obj/item/mining_scanner,
+		/obj/item/shovel,
+		/obj/item/melee/onehanded/knife/hunting,
+		/obj/item/gun/ballistic/automatic/pistol/n99,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		)
 
 /datum/outfit/job/den/f13settler/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -268,10 +269,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13dendoc
+/datum/job/oasis/f13dendoc
 	title = "Doctor"
 	flag = F13DENDOC
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 0
 	spawn_positions = 0
@@ -285,7 +286,7 @@ Mayor
 
 /datum/outfit/job/den/f13dendoc
 	name = "Doctor"
-	jobtype = /datum/job/den/f13dendoc
+	jobtype = /datum/job/oasis/f13dendoc
 	chemwhiz = TRUE
 	uniform = /obj/item/clothing/under/f13/medic
 	glasses = /obj/item/clothing/glasses/hud/health
@@ -310,11 +311,11 @@ Mayor
 	ADD_TRAIT(H, TRAIT_SURGERY_HIGH, src)
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13preacher
+/datum/job/oasis/f13preacher
 	title = "Preacher"
 	flag = F13PREACHER
 	department_head = list("Captain")
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	head_announce = list("Security")
 	faction = "Town"
 	total_positions = 1
@@ -350,7 +351,7 @@ Mayor
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=2
 		)
 
-/datum/job/den/f13preacher/after_spawn(mob/living/H, mob/M)
+/datum/job/oasis/f13preacher/after_spawn(mob/living/H, mob/M)
 	if(H.mind)
 		H.mind.isholy = TRUE
 
@@ -444,7 +445,7 @@ Mayor
 
 /datum/outfit/job/den/f13preacher
 	name = "Preacher"
-	jobtype = /datum/job/den/f13preacher
+	jobtype = /datum/job/oasis/f13preacher
 
 	id = /obj/item/card/id/dogtag/town
 	ears = /obj/item/radio/headset/headset_town
@@ -467,10 +468,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13barkeep
+/datum/job/oasis/f13barkeep
 	title = "Barkeep"
 	flag = F13BARKEEP
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
@@ -491,7 +492,7 @@ Mayor
 
 /datum/outfit/job/den/f13barkeep
 	name = "Barkeep"
-	jobtype = /datum/job/den/f13barkeep
+	jobtype = /datum/job/oasis/f13barkeep
 
 	uniform = /obj/item/clothing/under/f13/bartenderalt
 	id = /obj/item/card/id/dogtag/town
@@ -540,10 +541,10 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 
 /*--------------------------------------------------------------*/
-/datum/job/den/f13settler
+/datum/job/oasis/f13settler
 	title = "Citizen"
 	flag = F13SETTLER
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 8
 	spawn_positions = 8
@@ -562,6 +563,27 @@ Mayor
 	)
 	access = list(ACCESS_BAR)
 	minimal_access = list(ACCESS_BAR)
+
+
+/datum/outfit/job/den/f13settler
+	name = "Citizen"
+	jobtype = /datum/job/oasis/f13settler
+	ears = /obj/item/radio/headset/headset_town
+	belt = null
+	id = /obj/item/card/id/dogtag/town
+	ears = /obj/item/radio/headset/headset_town
+	uniform = /obj/item/clothing/under/f13/settler
+	shoes = /obj/item/clothing/shoes/jackboots
+	backpack = /obj/item/storage/backpack/satchel/explorer
+	r_pocket = /obj/item/flashlight/flare
+	r_hand = /obj/item/book/granter/trait/selection
+	backpack_contents = list(
+		/obj/item/storage/bag/money/small/settler = 1,
+		/obj/item/melee/onehanded/knife/hunting = 1,
+		/obj/item/gun/ballistic/automatic/pistol/n99 = 1,
+		/obj/item/ammo_box/magazine/m10mm_adv/simple = 2,
+		)
+
 
 /datum/outfit/loadout/provisioner
 	name = "Provisioner"
@@ -606,23 +628,7 @@ Mayor
 	shoes = /obj/item/clothing/shoes/f13/cowboy
 	backpack_contents = list()
 
-/datum/outfit/job/den/f13settler
-	name = "Citizen"
-	jobtype = /datum/job/den/f13settler
-	ears = /obj/item/radio/headset/headset_town
-	belt = null
-	id = /obj/item/card/id/dogtag/town
-	ears = /obj/item/radio/headset/headset_town
-	uniform = /obj/item/clothing/under/f13/settler
-	shoes = /obj/item/clothing/shoes/jackboots
-	backpack = /obj/item/storage/backpack/satchel/explorer
-	r_pocket = /obj/item/flashlight/flare
-	r_hand = /obj/item/book/granter/trait/selection
-	backpack_contents = list(
-			/obj/item/storage/bag/money/small/settler = 1, \
-			/obj/item/kitchen/knife/combat = 1, \
-			/obj/item/gun/ballistic/automatic/pistol/n99 = 1, \
-			/obj/item/ammo_box/magazine/m10mm_adv/simple=2)
+
 /*----------------------------------------------------------------
 --							Detective							--
 ----------------------------------------------------------------*/
@@ -662,15 +668,15 @@ Mayor
 		/obj/item/detective_scanner=1,
 		/obj/item/storage/box/gloves=1,
 		/obj/item/storage/box/evidence=1,
-		/obj/item/ammo_box/a357=2)
+		/obj/item/ammo_box/c38=2)
 
 /*--------------------------------------------------------------*/
 
 /*
-/datum/job/den/f13banker
+/datum/job/oasis/f13banker
 	title = "Banker"
 	flag = F13BANKER
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
@@ -692,7 +698,7 @@ Mayor
 
 /datum/outfit/job/den/f13banker
 	name = "Banker"
-	jobtype = /datum/job/den/f13banker
+	jobtype = /datum/job/oasis/f13banker
 
 	uniform = /obj/item/clothing/under/lawyer/blacksuit
 	id = /obj/item/card/id/silver
@@ -748,10 +754,10 @@ Mayor
 
 /*--------------------------------------------------------------*/
 
-/datum/job/den/f13shopkeeper
+/datum/job/oasis/f13shopkeeper
 	title = "Shopkeeper"
 	flag = F13SHOPKEEPER
-	department_flag = DEN
+	department_flag = DEP_OASIS
 	faction = "Town"
 	total_positions = 2
 	spawn_positions = 2
@@ -766,7 +772,7 @@ Mayor
 
 /datum/outfit/job/den/f13shopkeeper
 	name = "Shopkeeper"
-	jobtype = /datum/job/den/f13shopkeeper
+	jobtype = /datum/job/oasis/f13shopkeeper
 
 	id = /obj/item/card/id/dogtag/town
 	uniform = /obj/item/clothing/under/f13/roving

@@ -2016,7 +2016,6 @@
 /area/awaymission/snowdin/post/kitchen)
 "eD" = (
 /obj/structure/table,
-/obj/item/kitchen/rollingpin,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
@@ -2356,9 +2355,6 @@
 /turf/open/floor/carpet,
 /area/awaymission/snowdin/post/dorm)
 "ft" = (
-/obj/structure/sign/poster/official/no_erp{
-	pixel_x = -32
-	},
 /obj/machinery/holopad,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1

@@ -18,16 +18,16 @@
 	..()
 
 /obj/item/gun/ballistic/revolver/hobo
-	slowdown = 0.1
+	slowdown = 0.2
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 
 /obj/item/gun/ballistic/revolver/hobo/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0, stam_cost = 0)
-	if(prob(1))
+	if(prob(4))
 		playsound(user, fire_sound, 50, 1)
 		to_chat(user, "<span class='userdanger'>[src] misfires, detonating the round in the barrel prematurely!</span>")
-		user.take_bodypart_damage(0,20)
+		user.take_bodypart_damage(0,22)
 		user.dropItemToGround(src)
 		return FALSE
 	..()
@@ -96,6 +96,14 @@
 	spread = 3
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 
+/obj/item/gun/ballistic/revolver/hobo/piperifle/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0, stam_cost = 0)
+	if(prob(1))
+		playsound(user, fire_sound, 50, 1)
+		to_chat(user, "<span class='userdanger'>[src] misfires, detonating the round in the barrel prematurely!</span>")
+		user.take_bodypart_damage(0,20)
+		user.dropItemToGround(src)
+		return FALSE
+	..()
 
 //Pepperbox gun											Keywords: 10mm, 4 rounds internal, Extra damage +3
 /obj/item/gun/ballistic/revolver/hobo/pepperbox
@@ -112,13 +120,16 @@
 	spread = 7
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 
-//obj/item/gun/ballistic/revolver/hobo/pepperbox/attackby(obj/item/A, mob/user, params)
-//	..()
-//	if(A.tool_behaviour == TOOL_SAW || istype(A, /obj/item/gun/energy/plasmacutter))
-//		sawoff(user)
+/obj/item/gun/ballistic/revolver/hobo/pepperbox/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0, stam_cost = 0)
+	if(prob(1))
+		playsound(user, fire_sound, 50, 1)
+		to_chat(user, "<span class='userdanger'>[src] misfires, detonating the round in the barrel prematurely!</span>")
+		user.take_bodypart_damage(0,20)
+		user.dropItemToGround(src)
+		return FALSE
+	..()
 
-
-//Shotgun bat											Keywords: Shotgun, 1 round internal, Extra damage +3, Melee damage
+//Shotgun bat											Keywords: Shotgun, 1 round internal, Extra damage +2, Melee damage
 /obj/item/gun/ballistic/revolver/single_shotgun
 	name = "shotgun bat"
 	desc = "A baseball bat, a piece of pipe and a screwdriver is all you need to fire a shotgun shell apparantly. Good for whacking things once fired too."
@@ -130,9 +141,9 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/improvised
-	force = 28 //Good club
-	fire_delay = 0.25
-	extra_damage = 3
+	force = 26 //Good club
+	fire_delay = 0.5
+	extra_damage = 2
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 
 /obj/item/gun/ballistic/revolver/single_shotgun/update_icon_state()
@@ -148,8 +159,8 @@
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_LIGHT
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised44
-	force = 26
-	fire_delay = 0.25
+	force = 24
+	fire_delay = 0.5
 	spread = 4
 	extra_damage = 5
 	fire_sound = 'sound/weapons/Gunshot.ogg'
@@ -164,7 +175,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_LIGHT
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/improvised38
-	force = 24
+	force = 23
 	fire_delay = 0.25
 	spread = 5
 	extra_damage = 2

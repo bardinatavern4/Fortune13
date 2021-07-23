@@ -1033,7 +1033,7 @@
 /obj/structure/table/wood/fancy,
 /obj/item/clothing/suit/armor/riot/knight/blue,
 /obj/item/clothing/head/helmet/knight/blue,
-/obj/item/claymore,
+/obj/item/melee/onehanded/machete/forgedmachete,
 /turf/open/floor/holofloor/grass,
 /area/holodeck/rec_center/thunderdome1218)
 "dq" = (
@@ -1047,7 +1047,7 @@
 /obj/structure/table/wood/fancy,
 /obj/item/clothing/suit/armor/riot/knight/red,
 /obj/item/clothing/head/helmet/knight/red,
-/obj/item/claymore,
+/obj/item/melee/onehanded/machete/forgedmachete,
 /turf/open/floor/holofloor/grass,
 /area/holodeck/rec_center/thunderdome1218)
 "ds" = (
@@ -1333,7 +1333,6 @@
 "dX" = (
 /obj/structure/table/wood,
 /obj/item/folder,
-/obj/item/melee/classic_baton/telescopic,
 /turf/open/floor/holofloor,
 /area/holodeck/rec_center/school)
 "dY" = (
@@ -3485,6 +3484,12 @@
 "km" = (
 /turf/closed/wall/f13/tunnel,
 /area/centcom/evac)
+"kn" = (
+/obj/structure/sign/poster/prewar/poster75{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "ko" = (
 /turf/closed/indestructible/abductor{
 	icon_state = "alien20"
@@ -3637,7 +3642,7 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/revolver/m29/snub,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -3711,7 +3716,7 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/revolver/m29/snub,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -3781,7 +3786,7 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/revolver/m29/snub,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -3820,7 +3825,7 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/gun/ballistic/revolver/mateba,
+/obj/item/gun/ballistic/revolver/m29/snub,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -8486,6 +8491,13 @@
 /obj/structure/chalkboard,
 /turf/open/floor/plasteel/dark,
 /area/centcom/evac)
+"yh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/prewar/poster60{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "yi" = (
 /mob/living/simple_animal/hostile/raider/baseball,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -8507,6 +8519,13 @@
 	},
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/tcoms)
+"yr" = (
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/inside/subway,
+/area/centcom/evac)
 "yv" = (
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -9568,12 +9587,17 @@
 "CJ" = (
 /obj/structure/chair/stool/retro/black,
 /mob/living/simple_animal/hostile/raider,
+/obj/structure/sign/poster/prewar/poster82{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "CK" = (
 /obj/structure/simple_door/metal/barred,
 /obj/structure/decoration/rag{
-	icon_state = "skulls"
+	desc = "A string of bones and skulls.<br>A common warning from tribals and raiders to outsiders.";
+	icon_state = "skulls";
+	name = "skulls"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
@@ -9583,7 +9607,7 @@
 /turf/open/floor/plasteel/blue,
 /area/centcom/evac)
 "CM" = (
-/obj/item/claymore/machete,
+/obj/item/melee/onehanded/machete,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "CN" = (
@@ -10047,7 +10071,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "Fm" = (
-/obj/item/kitchen/knife/trench,
+/obj/item/melee/onehanded/knife/trench,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "FT" = (
@@ -10264,6 +10288,15 @@
 	dir = 8
 	},
 /area/tdome/tdomeobserve)
+"Ie" = (
+/obj/structure/chair/bench,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/deathmatch,
+/obj/structure/sign/poster/prewar/poster66{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "Ih" = (
 /obj/structure/wreck/trash/three_barrels,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -10613,6 +10646,15 @@
 /obj/effect/landmark/abductor/agent,
 /turf/open/floor/plating/abductor,
 /area/abductor_ship)
+"JO" = (
+/obj/structure/chair/bench,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/deathmatch,
+/obj/structure/sign/poster/prewar/poster62{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "JV" = (
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape/backup)
@@ -11167,6 +11209,13 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding)
+"Mz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/prewar/poster72{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "MB" = (
 /turf/open/indestructible/binary,
 /area/fabric_of_reality)
@@ -11312,6 +11361,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
+"OF" = (
+/obj/structure/sign/poster/prewar/poster72{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "OG" = (
 /obj/structure/dresser,
 /obj/machinery/light{
@@ -11427,6 +11482,12 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding)
+"Qw" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/indestructible/ground/inside/subway,
+/area/centcom/evac)
 "QA" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/plasteel/cafeteria,
@@ -11533,6 +11594,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
+"RF" = (
+/obj/machinery/light/small/broken,
+/obj/effect/decal/cleanable/glass,
+/turf/open/indestructible/ground/inside/subway,
 /area/centcom/evac)
 "RL" = (
 /turf/closed/wall/r_wall/f13superstore{
@@ -11916,6 +11982,13 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding)
+"TU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/poster/prewar/poster94{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "TZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/tracks{
@@ -12099,7 +12172,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/centcom/evac)
 "WT" = (
-/obj/structure/fluff/rails,
 /obj/docking_port/stationary{
 	dir = 2;
 	dwidth = 25;
@@ -12140,6 +12212,10 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/holding)
+"Xz" = (
+/obj/machinery/light/small,
+/turf/open/indestructible/ground/inside/subway,
+/area/centcom/evac)
 "XL" = (
 /obj/machinery/door/airlock/wood,
 /turf/open/floor/wood,
@@ -12263,6 +12339,14 @@
 /mob/living/simple_animal/bot/medbot,
 /turf/open/floor/wood,
 /area/centcom/holding)
+"Zy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/human,
+/obj/structure/sign/poster/prewar/poster66{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/centcom/evac)
 "ZN" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -33588,7 +33672,7 @@ tm
 DB
 DB
 tm
-DB
+Xz
 km
 EF
 rb
@@ -33831,7 +33915,7 @@ yp
 Yw
 Fd
 Yy
-Yy
+yh
 QY
 Yy
 Yy
@@ -34094,7 +34178,7 @@ Qa
 Yy
 Ge
 Yw
-zS
+Ie
 Yy
 td
 DB
@@ -34616,7 +34700,7 @@ tm
 DB
 DB
 tm
-DB
+Xz
 km
 EF
 rb
@@ -35644,7 +35728,7 @@ tm
 DB
 DB
 tm
-DB
+RF
 km
 EF
 rb
@@ -36649,7 +36733,7 @@ rb
 rb
 EF
 Yw
-Yv
+OF
 Yv
 Da
 Yv
@@ -36672,7 +36756,7 @@ tm
 DB
 DB
 tm
-DB
+RF
 km
 EF
 rb
@@ -37178,7 +37262,7 @@ WM
 Yv
 DW
 Yw
-zS
+JO
 Yy
 td
 DB
@@ -37677,8 +37761,8 @@ rb
 rb
 EF
 Yw
-Yy
-yO
+Mz
+Yv
 CZ
 Yv
 Yy
@@ -37700,7 +37784,7 @@ tm
 DB
 DB
 tm
-DB
+RF
 km
 EF
 rb
@@ -38724,11 +38808,11 @@ Yy
 Yy
 td
 DB
-WT
+tm
 DB
 DB
 tm
-DB
+Xz
 km
 EF
 rb
@@ -39219,7 +39303,7 @@ rb
 rb
 EF
 Yw
-Yv
+OF
 Yv
 CZ
 Yy
@@ -39494,7 +39578,7 @@ Yw
 zT
 Yy
 Ka
-DB
+WT
 tm
 DB
 DB
@@ -39756,7 +39840,7 @@ tm
 DB
 DB
 tm
-DB
+RF
 km
 EF
 rb
@@ -40247,7 +40331,7 @@ rb
 rb
 EF
 Yw
-Yv
+OF
 Yv
 CZ
 Yv
@@ -40776,7 +40860,7 @@ Yv
 Yv
 Yv
 Yw
-Tm
+Zy
 Yy
 td
 DB
@@ -40784,7 +40868,7 @@ tm
 DB
 DB
 tm
-DB
+RF
 km
 EF
 rb
@@ -41542,7 +41626,7 @@ Yw
 Yv
 Yv
 ZR
-Yy
+Va
 KD
 zn
 DY
@@ -41798,7 +41882,7 @@ EO
 Yw
 YE
 Yy
-Yy
+TU
 VL
 Yy
 Fg
@@ -41812,7 +41896,7 @@ tm
 DB
 DB
 tm
-DB
+Xz
 km
 EF
 rb
@@ -42306,7 +42390,7 @@ rb
 EF
 Yw
 Yw
-Yv
+kn
 Yv
 ES
 Yw
@@ -42835,12 +42919,12 @@ YF
 SY
 YF
 km
-DB
+Qw
 tm
 DB
 DB
 tm
-DB
+Xz
 km
 EF
 rb
@@ -43863,12 +43947,12 @@ EF
 EF
 km
 km
-DB
+Qw
 tm
 DB
 DB
 tm
-DB
+RF
 km
 km
 rb
@@ -44120,12 +44204,12 @@ EF
 EF
 EF
 km
-xc
-xc
-xc
-xc
-xc
-xc
+DB
+tm
+DB
+DB
+tm
+DB
 km
 rb
 rb
@@ -44376,14 +44460,14 @@ EF
 rb
 rb
 rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
-rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
 rb
 aa
 aa
@@ -44632,16 +44716,16 @@ EF
 rb
 rb
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -44889,16 +44973,16 @@ rb
 rb
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+yr
+tm
+DB
+DB
+tm
+Xz
+km
+rb
 aa
 aa
 aa
@@ -45146,16 +45230,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -45403,16 +45487,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -45660,16 +45744,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -45917,16 +46001,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+Qw
+tm
+DB
+DB
+tm
+Xz
+km
+rb
 aa
 aa
 aa
@@ -46174,16 +46258,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -46431,16 +46515,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -46688,16 +46772,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -46945,16 +47029,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+yr
+tm
+DB
+DB
+tm
+Xz
+km
+rb
 aa
 aa
 aa
@@ -47202,16 +47286,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -47459,16 +47543,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+DB
+tm
+DB
+DB
+tm
+DB
+km
+rb
 aa
 aa
 aa
@@ -47716,16 +47800,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+km
+xc
+xc
+xc
+xc
+xc
+xc
+km
+rb
 aa
 aa
 aa
@@ -47973,16 +48057,16 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
 aa
 aa
 aa
