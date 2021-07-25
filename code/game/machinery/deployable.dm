@@ -6,6 +6,69 @@
 #define WOOD 2
 #define SAND 3
 
+
+
+
+//for mortars and other deployable machines like radio stations
+
+/obj/machinery/deployable
+	///Item that is deployed to create src.
+	var/obj/item/internal_item
+	///Since /obj/machinery/deployable aquires its sprites from an item and are set in New(), initial(icon_state) would return null. This var exists as a substitute.
+	var/default_icon_state
+
+
+/obj/machinery/deployable/Initialize(mapload, _internal_item)
+	. = ..()
+	internal_item = _internal_item
+
+	name = internal_item.name
+	desc = internal_item.desc
+
+	icon = initial(internal_item.icon)
+	default_icon_state = initial(internal_item.icon_state) + "_deployed"
+	icon_state = default_icon_state
+	update_icon_state()
+
+/obj/machinery/deployable/update_icon_state()
+	. = ..()
+
+///Dissassembles the device
+/obj/machinery/deployable/proc/disassemble(mob/user)
+	var/obj/item/item = internal_item
+	if(CHECK_BITFIELD(item.item_flags, DEPLOYED_NO_PICKUP))
+		to_chat(user, "<span class='notice'>The [src] is anchored in place and cannot be disassembled.</span>")
+		return
+	SEND_SIGNAL(src, COMSIG_ITEM_UNDEPLOY, user)
+
+/obj/machinery/deployable/Destroy()
+	if(internal_item)
+		QDEL_NULL(internal_item)
+	operator?.unset_interaction()
+	return ..()
+
+/obj/machinery/deployable/examine(mob/user)
+	. = ..()
+	internal_item.examine(user)
+
+/obj/machinery/deployable/MouseDrop(over_object, src_location, over_location) 
+	if(!ishuman(usr))
+		return
+	var/mob/living/carbon/human/user = usr //this is us
+	if(over_object != user || !in_range(src, user))
+		return
+	if(CHECK_BITFIELD(internal_item.item_flags, DEPLOYED_WRENCH_DISASSEMBLE))
+		to_chat(user, "<span class = 'notice'>You cannot disassemble [src] without a wrench.</span>")
+		return
+	disassemble(user)
+
+/obj/machinery/deployable/wrench_act(mob/living/user, obj/item/I)
+	if(!CHECK_BITFIELD(internal_item.item_flags, DEPLOYED_WRENCH_DISASSEMBLE))
+		return ..()
+	disassemble(user)
+
+
+
 //Barricades/cover
 
 /obj/structure/barricade

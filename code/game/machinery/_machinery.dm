@@ -119,6 +119,7 @@ Class Procs:
 	var/new_occupant_dir = SOUTH //The direction the occupant will be set to look at when entering the machine.
 	var/speed_process = FALSE // Process as fast as possible?
 	var/obj/item/circuitboard/circuit // Circuit to be created and inserted when the machinery is created
+	var/mob/living/carbon/human/operator
 	var/wire_compatible = FALSE
 		// For storing and overriding ui id and dimensions
 	var/tgui_id // ID of TGUI interface

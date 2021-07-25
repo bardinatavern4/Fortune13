@@ -86,6 +86,7 @@
 		return FALSE
 
 /atom/proc/interact(mob/user)
+	user.set_interaction(src)
 	if(interaction_flags_atom & INTERACT_ATOM_NO_FINGERPRINT_INTERACT)
 		add_hiddenprint(user)
 	else

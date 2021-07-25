@@ -217,6 +217,33 @@
 /datum/effect_system/smoke_spread/sleeping
 	effect_type = /obj/effect/particle_effect/smoke/sleeping
 
+
+
+/////////////////////////////////////////////
+// MUSTARD GAS
+/////////////////////////////////////////////
+
+/obj/effect/particle_effect/smoke/mustard
+	color = "#f3df46"
+	lifetime = 10
+
+/obj/effect/particle_effect/smoke/mustard/smoke_mob(mob/living/carbon/M)
+	if(..())
+		M.emote("violently coughs")
+		to_chat(M, "<span class='warning'>You start to violently cough and you can feel yours organs melting! Get out of the gas, now!.</span>")
+		M.adjustOxyLoss(3)
+		M.adjustOrganLoss(ORGAN_SLOT_LUNGS, 3)
+		M.adjustOrganLoss(ORGAN_SLOT_HEART, 3)
+		M.adjustOrganLoss(ORGAN_SLOT_EYES, 10)
+		M.adjustOrganLoss(ORGAN_SLOT_LIVER, 4)
+		M.adjustOrganLoss(ORGAN_SLOT_STOMACH, 5)
+		return 1
+
+/datum/effect_system/smoke_spread/mustard
+	effect_type = /obj/effect/particle_effect/smoke/mustard
+
+
+
 /////////////////////////////////////////////
 // Chem smoke
 /////////////////////////////////////////////

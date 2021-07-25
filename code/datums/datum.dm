@@ -263,3 +263,12 @@
 		return
 	SEND_SIGNAL(source, COMSIG_CD_RESET(index), S_TIMER_COOLDOWN_TIMELEFT(source, index))
 	TIMER_COOLDOWN_END(source, index)
+
+
+
+/datum/proc/on_set_interaction(mob/user)
+	return
+	
+/datum/proc/on_unset_interaction(mob/user)
+	return
+

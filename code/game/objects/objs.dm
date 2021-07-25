@@ -176,6 +176,11 @@
 /obj/proc/container_resist(mob/living/user)
 	return
 
+
+obj/on_set_interaction(mob/user)
+	. = ..()
+	ENABLE_BITFIELD(obj_flags, IN_USE)
+
 /mob/proc/unset_machine()
 	if(machine)
 		machine.on_unset_machine(src)

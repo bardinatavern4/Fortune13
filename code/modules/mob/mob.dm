@@ -305,6 +305,7 @@ mob/visible_message(message, self_message, blind_message, vision_distance = DEFA
 	return TRUE
 
 /mob/proc/show_inv(mob/user)
+	user.set_interaction(src)
 	return
 
 //view() but with a signal, to allow blacklisting some of the otherwise visible atoms.
@@ -1089,5 +1090,24 @@ GLOBAL_VAR_INIT(exploit_warn_spam_prevention, 0)
  * Mostly called by doUnEquip()
  * Like item dropped() on mob side.
  */
+
 /mob/proc/on_item_dropped(obj/item/I)
 	return
+
+/mob/proc/set_interaction(atom/movable/AM)
+	if(interactee)
+		if(interactee == AM) //already set
+			return
+		else
+			unset_interaction()
+	interactee = AM
+	interactee.on_set_interaction(src)
+
+
+/mob/proc/unset_interaction()
+	if(interactee)
+		interactee.on_unset_interaction(src)
+		interactee = null
+
+
+

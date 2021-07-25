@@ -836,9 +836,8 @@
 /obj/item/clothing/suit/armor/f13/ncrarmor/stalker //Cheeki breeki i v damke !!!
 	name = "trooper armor of \"Stalker\" battalion"
 	desc = "A set of NCR armor that consists of an armored breastplate, metal pauldrons and gauntlets, worn by NCR explorers in combat environments.<br>This one has a radiation symbol painted over the chestplate with yellow paint - it must be a battalion insignia."
-	icon_state = "ncr_armor7"
-	item_state = "ncr_armor7"
-	icon = 'icons/fallout/clothing/suits.dmi'
+	icon_state = "stalker_armor"
+	item_state = "stalker_armor"
 
 /obj/item/clothing/suit/armor/f13/ncrarmor/punisher
 	name = "trooper armor of \"Punisher\" battalion"

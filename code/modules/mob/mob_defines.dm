@@ -137,7 +137,7 @@
 	var/list/mousemove_intercept_objects
 
 	var/datum/click_intercept
-
+	var/atom/movable/interactee //the thing that the mob is currently interacting with (e.g. a computer, another mob (stripping a mob), manning a hmg)
 	var/registered_z
 
 	var/list/alerts = list() // contains /obj/screen/alert only // On /mob so clientless mobs will throw alerts properly
